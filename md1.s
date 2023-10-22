@@ -1,6 +1,7 @@
-.section .text
-
+.text
+.align 2
 .global asum
+.type asum, %function
 
 asum:
   mov r5, #0 // initialize sum variable to 0
