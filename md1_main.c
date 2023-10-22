@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
   
   int arg = atoi(argv[1]);
   unsigned int res = asum((unsigned int)arg);
-  printf("%x\n", res);
+  printf("%u\n", res);
 
   return 0;
 }
