@@ -3,7 +3,6 @@
 .global asum
 
 asum:
-  push {r5}
   mov r5, #0
   cmp r0, #0
   beq end
