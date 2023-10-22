@@ -1,4 +1,6 @@
+TARGET:= md1
+
 all:
-	arm-linux-gnueabi-as asum.s -o asum.o
-	arm-linux-gnueabi-gcc -static -c hw1.c -o hw1.o
-	arm-linux-gnueabi-gcc asum.o hw1.o -o hw1
+	arm-linux-gnueabi-as ($TARGET).s -o ($TARGET)_s.o
+	arm-linux-gnueabi-gcc -static -c ($TARGET)_main.c -o ($TARGET)_c.o
+	arm-linux-gnueabi-gcc ($TARGET)_s.o ($TARGET)_c.o -o hw1
