@@ -1,6 +1,6 @@
-#include "md1.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "md1.h"
 
 int main(int argc, char *argv[])
 {
